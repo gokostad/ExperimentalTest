@@ -6,7 +6,7 @@
  */
 
 #include <gtest/gtest.h>
-#include "../../Experimental/src/ReverseLinkedList.h"
+#include "ReverseLinkedList.h"
 
 TEST(ReverseLinkedListTest, Null)
 {

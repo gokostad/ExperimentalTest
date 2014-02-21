@@ -26,6 +26,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src/BitwiseSwap.cpp</name>
+			<type>1</type>
+			<location>/home/goran/workspace/Experimental/src/BitwiseSwap.cpp</location>
+		</link>
+		<link>
 			<name>src/CirkularLinkedList.cpp</name>
 			<type>1</type>
 			<location>/home/goran/workspace/Experimental/src/CirkularLinkedList.cpp</location>

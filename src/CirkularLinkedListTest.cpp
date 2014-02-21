@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../Experimental/src/CirkularLinkedList.h"
+#include "CirkularLinkedList.h"
 
 TEST(CirkularLinkedListTest, Acyclic)
 {
@@ -9,6 +9,7 @@ TEST(CirkularLinkedListTest, Acyclic)
 	ll[2].next = &ll[3];
 	EXPECT_FALSE(isCircular(&ll[0]));
 	EXPECT_FALSE(isCircular1(&ll[0]));
+	EXPECT_FALSE(isCircular2(&ll[0]));
 }
 
 
@@ -20,6 +21,7 @@ TEST(CirkularLinkedListTest, CyclicEvenFull) {
 	ll[3].next = &ll[0];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicOddFull) {
@@ -31,6 +33,7 @@ TEST(CirkularLinkedListTest, CyclicOddFull) {
 	ll[4].next = &ll[0];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicEvenPartDeep) {
@@ -41,6 +44,7 @@ TEST(CirkularLinkedListTest, CyclicEvenPartDeep) {
 	ll[3].next = &ll[1];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicOddPartDeep) {
@@ -52,6 +56,7 @@ TEST(CirkularLinkedListTest, CyclicOddPartDeep) {
 	ll[4].next = &ll[2];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicEvenPartShallow) {
@@ -62,6 +67,7 @@ TEST(CirkularLinkedListTest, CyclicEvenPartShallow) {
 	ll[3].next = &ll[2];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicOddPartShallow) {
@@ -73,6 +79,7 @@ TEST(CirkularLinkedListTest, CyclicOddPartShallow) {
 	ll[4].next = &ll[3];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicEvenPartZeroShallow) {
@@ -83,6 +90,7 @@ TEST(CirkularLinkedListTest, CyclicEvenPartZeroShallow) {
 	ll[3].next = &ll[3];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }
 
 TEST(CirkularLinkedListTest, CyclicOddPartZeroShallow) {
@@ -94,4 +102,5 @@ TEST(CirkularLinkedListTest, CyclicOddPartZeroShallow) {
 	ll[4].next = &ll[4];
 	EXPECT_TRUE(isCircular(&ll[0]));
 	EXPECT_TRUE(isCircular1(&ll[0]));
+	EXPECT_TRUE(isCircular2(&ll[0]));
 }

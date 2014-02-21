@@ -17,8 +17,8 @@ src/ReverseLinkedListTest.d: ../src/ReverseLinkedListTest.cpp \
  /home/goran/gtest-1.7.0/include/gtest/gtest-test-part.h \
  /home/goran/gtest-1.7.0/include/gtest/gtest-typed-test.h \
  /home/goran/gtest-1.7.0/include/gtest/gtest_pred_impl.h \
- ../src/../../Experimental/src/ReverseLinkedList.h \
- ../src/../../Experimental/src/CirkularLinkedList.h
+ /home/goran/workspace/Experimental/src/ReverseLinkedList.h \
+ /home/goran/workspace/Experimental/src/CirkularLinkedList.h
 
 /home/goran/gtest-1.7.0/include/gtest/gtest.h:
 
@@ -56,6 +56,6 @@ src/ReverseLinkedListTest.d: ../src/ReverseLinkedListTest.cpp \
 
 /home/goran/gtest-1.7.0/include/gtest/gtest_pred_impl.h:
 
-../src/../../Experimental/src/ReverseLinkedList.h:
+/home/goran/workspace/Experimental/src/ReverseLinkedList.h:
 
-../src/../../Experimental/src/CirkularLinkedList.h:
+/home/goran/workspace/Experimental/src/CirkularLinkedList.h:

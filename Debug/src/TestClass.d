@@ -1,4 +1,4 @@
-src/CirkularLinkedListTest.d: ../src/CirkularLinkedListTest.cpp \
+src/TestClass.d: ../src/TestClass.cpp ../src/TestClass.h \
  /home/goran/gtest-1.7.0/include/gtest/gtest.h \
  /home/goran/gtest-1.7.0/include/gtest/internal/gtest-internal.h \
  /home/goran/gtest-1.7.0/include/gtest/internal/gtest-port.h \
@@ -17,7 +17,9 @@ src/CirkularLinkedListTest.d: ../src/CirkularLinkedListTest.cpp \
  /home/goran/gtest-1.7.0/include/gtest/gtest-test-part.h \
  /home/goran/gtest-1.7.0/include/gtest/gtest-typed-test.h \
  /home/goran/gtest-1.7.0/include/gtest/gtest_pred_impl.h \
- /home/goran/workspace/Experimental/src/CirkularLinkedList.h
+ /home/goran/workspace/Experimental/src/BitwiseSwap.h
+
+../src/TestClass.h:
 
 /home/goran/gtest-1.7.0/include/gtest/gtest.h:
 
@@ -55,4 +57,4 @@ src/CirkularLinkedListTest.d: ../src/CirkularLinkedListTest.cpp \
 
 /home/goran/gtest-1.7.0/include/gtest/gtest_pred_impl.h:
 
-/home/goran/workspace/Experimental/src/CirkularLinkedList.h:
+/home/goran/workspace/Experimental/src/BitwiseSwap.h:
